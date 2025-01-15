@@ -1,0 +1,32 @@
+{
+    "dataset_name": "cardiotocography",
+    "version": "1.0.0",
+    "description": "A sample dataset for classification tasks.",
+    "license": "CC BY 4.0",
+    "citation": "Doe, J., Example Dataset, 2025.",
+    "schema": {
+      "columns": [
+        {"name": "feature1", "type": "float", "description": "Normalized feature."},
+        {"name": "feature2", "type": "integer", "description": "Categorical feature encoded as integer."},
+        {"name": "label", "type": "string", "description": "Target variable."}
+      ]
+    },
+    "provenance": {
+      "source": "https://example.com/dataset",
+      "transformations": [
+        "Missing values filled with mean for feature1.",
+        "Feature2 one-hot encoded for training."
+      ]
+    },
+    "access": {
+      "url": "https://example.com/dataset/download",
+      "formats": ["csv", "parquet"]
+    },
+    "usage_examples": [
+      {
+        "framework": "pandas",
+        "code": "import pandas as pd\ndata = pd.read_csv('example_dataset.csv')"
+      }
+    ]
+  }
+  
