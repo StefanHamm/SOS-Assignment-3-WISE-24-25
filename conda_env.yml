@@ -3,6 +3,8 @@ channels:
   - defaults
 dependencies:
   - python=3.9
+  - jupyter
+  - ipykernel
   - pip:
     - bokeh==2.4.1
     - holoviews==1.14.8
