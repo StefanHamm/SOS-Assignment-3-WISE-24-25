@@ -1,0 +1,17 @@
+[project]
+name = "sos-assignment-3-wise-24-25"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "bokeh>=3.6.2",
+    "holoviews>=1.20.0",
+    "numpy>=2.2.2",
+    "pandas>=2.2.3",
+    "panel>=1.6.0",
+    "param>=2.2.0",
+    "scikit-image>=0.25.1",
+    "scikit-learn>=1.6.1",
+    "scipy>=1.15.1",
+]
