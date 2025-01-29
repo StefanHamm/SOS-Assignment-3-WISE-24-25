@@ -1,0 +1,47 @@
+{
+    "@context": "https://w3id.org/croissant/v1.0",
+    "name": "Cardiotocography Dataset",
+    "description": "2126 fetal cardiotocograms (CTGs) were automatically processed and the respective diagnostic features measured. The CTGs were also classified by three expert obstetricians and a consensus classification label assigned to each of them. Classification was both with respect to a morphologic pattern (A, B, C, ...) and to a fetal state (N, S, P). Therefore, the dataset can be used either for 10-class or 3-class experiments.",
+    "version": "1.0",
+    "url": "https://archive.ics.uci.edu/ml/datasets/cardiotocography",
+    "authors": [
+      {"name": "J. P. Marques de Sá"},
+      {"name": "J. Bernardes"},
+      {"name": "D. Ayres de Campos"}
+    ],
+    "licenses": [{
+      "name": "Open Data Commons Public Domain Dedication and License (PDDL)",
+      "url": "https://opendatacommons.org/licenses/pddl/"
+    }],
+    "citation": "Ayres de Campos et al. (2000) SisPorto 2.0 A Program for Automated Analysis of Cardiotocograms. J Matern Fetal Med 5:311-318, UCI",
+    "records": {
+      "@id": "ctg_record",
+      "type": "Table",
+      "columns": [
+        {"name": "LB", "datatype": "integer", "description": "FHR baseline (beats per minute)"},
+        {"name": "AC", "datatype": "float", "description": "Number of accelerations per second"},
+        {"name": "FM", "datatype": "float", "description": "Number of fetal movements per second"},
+        {"name": "UC", "datatype": "float", "description": "Number of uterine contractions per second"},
+        {"name": "DL", "datatype": "float", "description": "Number of light decelerations per second"},
+        {"name": "DS", "datatype": "float", "description": "Number of severe decelerations per second"},
+        {"name": "DP", "datatype": "float", "description": "Number of prolonged decelerations per second"},
+        {"name": "ASTV", "datatype": "float", "description": "Percentage of time with abnormal short-term variability"},
+        {"name": "MSTV", "datatype": "float", "description": "Mean value of short-term variability"},
+        {"name": "ALTV", "datatype": "float", "description": "Percentage of time with abnormal long-term variability"},
+        {"name": "MLTV", "datatype": "float", "description": "Mean value of long-term variability"},
+        {"name": "Width", "datatype": "integer", "description": "Width of FHR histogram"},
+        {"name": "Min", "datatype": "integer", "description": "Minimum of FHR histogram"},
+        {"name": "Max", "datatype": "integer", "description": "Maximum of FHR histogram"},
+        {"name": "Nmax", "datatype": "integer", "description": "Number of histogram peaks"},
+        {"name": "Nzeros", "datatype": "integer", "description": "Number of histogram zeros"},
+        {"name": "Mode", "datatype": "integer", "description": "Histogram mode"},
+        {"name": "Mean", "datatype": "float", "description": "Histogram mean"},
+        {"name": "Median", "datatype": "integer", "description": "Histogram median"},
+        {"name": "Variance", "datatype": "float", "description": "Histogram variance"},
+        {"name": "Tendency", "datatype": "integer", "description": "Histogram tendency"},
+        {"name": "CLASS", "datatype": "integer", "description": "FHR pattern class code (1 to 10)"},
+        {"name": "NSP", "datatype": "string", "description": "Fetal state class code (N=normal; S=suspect; P=pathologic)"}
+      ]
+    }
+  }
+  
